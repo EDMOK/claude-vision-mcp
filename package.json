@@ -1,0 +1,47 @@
+{
+  "name": "claude-vision-mcp",
+  "version": "1.1.0",
+  "description": "MCP server that lets text-only models analyze images through an OpenAI-compatible vision API",
+  "keywords": ["mcp", "model-context-protocol", "vision", "image-analysis", "claude", "llm", "multimodal"],
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-vision-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    ".env.example",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "openai": "^4.70.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDMOK/claude-vision-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EDMOK/claude-vision-mcp/issues"
+  },
+  "homepage": "https://github.com/EDMOK/claude-vision-mcp#readme",
+  "author": "EDMOK",
+  "publishConfig": {
+    "access": "public"
+  }
+}

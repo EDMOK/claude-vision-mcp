@@ -1,0 +1,14 @@
+# TypeScript 源码（不上 GitHub）
+src/
+scripts/
+tsconfig.json
+
+# 构建产物缓存（非必须）
+node_modules/
+package-lock.json
+
+# 本地配置
+.env
+.npmrc
+*.log
+.DS_Store
