@@ -95,10 +95,10 @@ vision_analyze(image_type: "clipboard")
 
 ### 2026-05-29 — v1.1.0
 
-- **工具 description 全面重写** — 6 部分结构化指引：功能说明、模型为何需要此工具、8 条触发场景 + 3 条不适用场景、5 种 `image_type` 决策树、prompt 使用说明、输出格式说明。让纯文本模型能精准判断何时调用及如何调用视觉能力
-- **剪贴板能力明确告知模型** — `clipboard` 模式的 description 现在明确说明工具可直接读取 Windows 系统剪贴板，模型不再误解为用户需要手动粘贴图片
-- **构建输出从 ESM 改为 CJS** — 修复 OpenAI SDK 在 ESM 运行时动态 `require()` 的兼容性问题；新增 `dist/package.json` 标记 CommonJS
-- **参数 description 精简优化** — 每个参数字段都改为场景化指引，模型能更快理解该填什么值
+- **工具 description 全面重写** — 6 部分结构化指引（功能说明、必要性、使用场景、5 种 image_type 决策树、prompt 用法、输出说明），让纯文本模型更精准地调用视觉能力
+- **剪贴板能力明确告知模型** — 模型现在知道 `clipboard` 模式可直接读取 Windows 系统剪贴板，不再要求用户手动粘贴图片
+- **构建输出改为 CommonJS** — 修复 OpenAI SDK 在 ESM 下动态 `require` 的兼容问题
+- **参数 description 精简优化** — 每个参数配场景化指引，降低模型误用率
 
 ## License
 
